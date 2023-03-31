@@ -1,0 +1,68 @@
+add_namespace = debug
+
+country_event = {
+	id = debug.1
+	title = ""
+	desc = ""
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ""
+		NVG = {
+			add_state_core = 1434
+			transfer_state = 1434
+		}
+	}	
+}
+
+country_event = {
+	id = debug.2
+	title = ""
+	desc = ""
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Уничтожение ВНС"
+		
+		set_variable = { conservatism_pop = party_popularity@despotism }
+		set_variable = { progressivism_pop = party_popularity@despotism }
+		set_variable = { liberalism_pop = party_popularity@despotism }
+		set_variable = { communist_pop = party_popularity@communist }
+
+		multiply_variable = { conservatism_pop = 100 }
+		multiply_variable = { progressivism_pop = 100 }
+		multiply_variable = { liberalism_pop = 100 }
+		multiply_variable = { communist_pop = 100 }
+
+		multiply_variable = { conservatism_pop = 0.5 }
+		round_variable = conservatism_pop
+
+		multiply_variable = { progressivism_pop = 0.333 }
+		round_variable = progressivism_pop
+
+		subtract_from_variable = { liberalism_pop = conservatism_pop }
+		subtract_from_variable = { liberalism_pop = progressivism_pop }
+
+		log = "[?conservatism_pop] - [?progressivism_pop] - [?liberalism_pop] - [?communist_pop]"
+
+		set_popularities = {
+			communist = var:communist_pop
+			conservatism = var:conservatism_pop
+			progressivism = var:progressivism_pop
+			liberalism = var:liberalism_pop
+		}
+
+	}	
+
+	option = {
+		name = "Верная популярность партий"
+
+		set_popularities = {
+			despotism = 91
+			communist = 9
+		}
+
+	}	
+}

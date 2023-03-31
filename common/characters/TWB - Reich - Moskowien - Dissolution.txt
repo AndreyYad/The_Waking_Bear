@@ -1,0 +1,140 @@
+# |===[ Characters ]===|
+#
+# 
+# NVG_none_liberal
+# NVG_VNS
+# NVG_Leonid_Zholudev_despotism
+# NVG_Leonid_Zholudev_conservatism
+# NVG_Vsevolod_Kochetov
+# NVG_Yuri_Orlov
+# NVG_Andrey_Sinyavsky
+
+characters = {
+
+	NVG_none_liberal = {
+		name = TWB_none_leader
+		portraits = {
+			civilian={
+				#large="gfx/leaders/NVG/Portrait_NVG_VNS.dds"
+			}
+		}
+		country_leader = {
+			#desc = "MSK_Bronislav_Kaminski_desc"
+			ideology = liberalism_christian_liberalism_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+	}
+
+	NVG_VNS = {
+		name = NVG_VNS
+		portraits = {
+			civilian={
+				large="gfx/leaders/NVG/Portrait_NVG_VNS.dds"
+			}
+		}
+		country_leader = {
+			#desc = "MSK_Bronislav_Kaminski_desc"
+			ideology = despotism_interim_government_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+	}
+
+	NVG_Leonid_Zholudev_despotism = {
+		name = NVG_Leonid_Zholudev
+		portraits = {
+			civilian={
+				large="gfx/leaders/NVG/Portrait_NVG_Leonid_Zholudev.dds"
+			}
+			army = {
+				large="gfx/leaders/NVG/Portrait_NVG_Leonid_Zholudev.dds"
+			}
+		}
+		country_leader = {
+			#desc = "MSK_Bronislav_Kaminski_desc"
+			ideology = despotism_interim_government_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+		field_marshal = {
+			traits = { }
+			skill = 2
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+
+	NVG_Leonid_Zholudev_conservatism = {
+		name = NVG_Leonid_Zholudev
+		portraits = {
+			civilian={
+				large="gfx/leaders/NVG/Portrait_NVG_Leonid_Zholudev.dds"
+			}
+			army = {
+				large="gfx/leaders/NVG/Portrait_NVG_Leonid_Zholudev.dds"
+			}
+		}
+		country_leader = {
+			#desc = "MSK_Bronislav_Kaminski_desc"
+			ideology = conservatism_paternalistic_conservatism_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+		field_marshal = {
+			traits = { }
+			skill = 2
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+
+	NVG_Andrey_Sinyavsky = {
+		name = NVG_Andrey_Sinyavsky
+		portraits = {
+			civilian={
+				large="gfx/leaders/NVG/Portrait_NVG_Andrey_Sinyavsky.dds"
+			}
+		}
+		country_leader = {
+			#desc = "MSK_Bronislav_Kaminski_desc"
+			ideology = liberalism_progressive_liberalism_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+	}
+
+	NVG_Yuri_Orlov = {
+		name = NVG_Yuri_Orlov
+		portraits = {
+			civilian={
+				large="gfx/leaders/NVG/Portrait_NVG_Yuri_Orlov.dds"
+			}
+		}
+		country_leader = {
+			#desc = "MSK_Bronislav_Kaminski_desc"
+			ideology = progressivism_democratic_socialism_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+	}
+
+	NVG_Vsevolod_Kochetov = {
+		name = NVG_Vsevolod_Kochetov
+		portraits = {
+			civilian={
+				large="gfx/leaders/NVG/Portrait_NVG_Vsevolod_Kochetov.dds"
+			}
+		}
+		country_leader = {
+			#desc = "MSK_Bronislav_Kaminski_desc"
+			ideology = communist_stalinism_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+	}
+}

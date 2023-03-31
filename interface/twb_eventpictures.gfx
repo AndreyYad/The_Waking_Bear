@@ -1,0 +1,15 @@
+spriteTypes = {	
+	
+	## NOVGOROD ##
+ 
+    SpriteType = {
+	name = "GFX_NVG_Sophia_Sobor"
+	texturefile = "gfx/event_pictures/GFX_NVG_Sophia_Sobor.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_NVG_Zholudev"
+	texturefile = "gfx/event_pictures/GFX_NVG_Zholudev.dds"
+	}
+
+}

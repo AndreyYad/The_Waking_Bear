@@ -1,0 +1,339 @@
+focus_tree = {
+	id = NVG_intro
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NVG
+		}
+	}
+	default = no
+
+	#Вечевой город
+	focus = {
+		id = NVG_veche_city
+		icon = GFX_focus_NVG_veche_city
+		x = 7
+		y = 0
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_veche_city"
+			country_event = { id = novgorod.2 days = 1 }
+		}
+	}
+
+	#Цель: Защита демократии
+	focus = {
+		id = NVG_goal_defense_of_democracy
+		icon = GFX_focus_NVG_goal_defense_of_democracy
+		x = 0
+		y = 1
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_veche_city
+		}
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_goal_defense_of_democracy"
+			add_ideas = { NVG_soldiers_of_democracy }
+		}
+	}
+
+	#Искать поддержку у коммунистов
+	focus = {
+		id = NVG_seek_support_from_the_communists
+		icon = GFX_focus_NVG_seek_support_from_the_communists
+		x = -2
+		y = 2
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_goal_defense_of_democracy
+		}
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_seek_support_from_the_communists"
+			add_timed_idea = {
+				idea = NVG_support_by_communist_partisans
+				days = 365
+			}
+			add_popularity = {
+    			ideology = communist
+ 	   			popularity = 0.03
+			}
+		}
+	}
+
+	#Связаться с Кочетовым
+	focus = {
+		id = NVG_contact_kochetov
+		icon = GFX_focus_NVG_contact_kochetov
+		x = -2
+		y = 3
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_seek_support_from_the_communists
+		}
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_contact_kochetov"
+		}
+	}
+
+	#Коммунистические партизаны
+	focus = {
+		id = NVG_communist_partisans
+		icon = GFX_focus_NVG_communist_partisans
+		x = -3
+		y = 4
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_contact_kochetov
+		}
+
+		cost = 2
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_communist_partisans"
+			add_ideas = { NVG_communist_partisans }
+		}
+	}
+
+	#Парад во славу демократии
+	focus = {
+		id = NVG_parade_in_honor_of_democracies
+		icon = GFX_focus_NVG_parade_in_honor_of_democracies
+		x = 0
+		y = 2
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_goal_defense_of_democracy
+		}
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_parade_in_honor_of_democracies"
+		}
+	}
+
+	#Восстановление городов
+	focus = {
+		id = NVG_urban_rebuilding
+		icon = GFX_none
+		x = 0
+		y = 3
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_parade_in_honor_of_democracies
+		}
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_urban_rebuilding"
+		}
+	}
+
+	#Начать реставрацию Кремля
+	focus = {
+		id = NVG_start_the_restoration_of_the_kremlin
+		icon = GFX_none
+		x = -1
+		y = 4
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_urban_rebuilding
+		}
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_start_the_restoration_of_the_kremlin"
+		}
+	}
+
+	#Поднятие промышленности
+	focus = {
+		id = NVG_rise_of_industry
+		icon = GFX_none
+		x = 1
+		y = 4
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_urban_rebuilding
+		}
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_rise_of_industry"
+		}
+	}
+
+	#Казнь нацистских управленцев
+	focus = {
+		id = NVG_execution_of_nazi_administrators
+		icon = GFX_focus_NVG_execution_of_nazi_administrators
+		x = 2
+		y = 2
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_goal_defense_of_democracy
+		}
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_execution_of_nazi_administrators"
+		}
+	}
+
+	#Русские и немцы против нацистского гнёта
+	focus = {
+		id = NVG_russians_and_germans_against_nazi_oppression
+		icon = GFX_focus_NVG_russians_and_germans_against_nazi_oppression
+		x = 2
+		y = 3
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_execution_of_nazi_administrators
+		}
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_russians_and_germans_against_nazi_oppression"
+		}
+	}
+
+	#Немецкие партизаны
+	focus = {
+		id = NVG_german_partisans
+		icon = GFX_focus_NVG_german_partisans
+		x = 3
+		y = 4
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_russians_and_germans_against_nazi_oppression
+		}
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_german_partisans"
+			add_ideas = { NVG_communist_partisans }
+		}
+	}
+
+	#Не куда отступать, за нами Новгород
+	focus = {
+		id = NVG_nowhere_to_retreat_novgorod_is_behind_us
+		icon = GFX_none
+		x = 0
+		y = 5
+
+		relative_position_id = NVG_veche_city
+
+		prerequisite = {
+			focus = NVG_communist_partisans
+		}
+		prerequisite = {
+			focus = NVG_start_the_restoration_of_the_kremlin
+		}
+		prerequisite = {
+			focus = NVG_rise_of_industry
+		}
+		prerequisite = {
+			focus = NVG_german_partisans
+		}
+
+		cost = 2
+
+		available = {
+
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus NVG_nowhere_to_retreat_novgorod_is_behind_us"
+		}
+	}
+
+}

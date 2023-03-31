@@ -1,0 +1,58 @@
+#
+# ██████╗ ██╗███████╗███████╗ ██████╗ ██╗     ██╗   ██╗████████╗██╗ ██████╗ ███╗   ██╗
+# ██╔══██╗██║██╔════╝██╔════╝██╔═══██╗██║     ██║   ██║╚══██╔══╝██║██╔═══██╗████╗  ██║
+# ██║  ██║██║███████╗███████╗██║   ██║██║     ██║   ██║   ██║   ██║██║   ██║██╔██╗ ██║
+# ██║  ██║██║╚════██║╚════██║██║   ██║██║     ██║   ██║   ██║   ██║██║   ██║██║╚██╗██║
+# ██████╔╝██║███████║███████║╚██████╔╝███████╗╚██████╔╝   ██║   ██║╚██████╔╝██║ ╚████║
+# ╚═════╝ ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚══════╝ ╚═════╝    ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+#
+# |===[ Events ]===|
+
+add_namespace = MSK_dissolution
+
+country_event = {
+	id = MSK_dissolution.1
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event MSK_dissolution.1" }
+	option = {
+		MSK_Kasche_Disturbance = yes
+	}
+}
+
+country_event = {
+	id = MSK_dissolution.2
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event MSK_dissolution.2" }
+	option = {
+		MSK_Kasche_Dissapearance_Skeleton_Begin = yes
+		country_event = { id = MSK_dissolution.3 days = 14 }
+	}
+}
+
+country_event = {
+	id = MSK_dissolution.3
+	title = MSK_dissolution.3.t
+	desc = MSK_dissolution.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	#hidden = yes
+
+	immediate = { log = "[GetDateText]: [Root.GetName]: event MSK_dissolution.3" }
+	option = {
+		name = MSK_dissolution.3.a
+		MSK_Dissolution_Start = yes
+	}
+	option = {
+		name = MSK_dissolution.3.b
+		MSK_Dissolution_Start = yes
+		NVG = { 
+			change_tag_from = MCW 
+			country_event = { id = novgorod.1 days = 5 }
+		}
+	}
+}

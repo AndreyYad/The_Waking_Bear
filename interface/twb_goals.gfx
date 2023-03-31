@@ -1,0 +1,51 @@
+spriteTypes = {	
+	
+	## NOVGOROD ##
+ 
+    SpriteType = {
+	name = "GFX_focus_NVG_veche_city"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_veche_city.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_NVG_contact_kochetov"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_contact_kochetov.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_NVG_seek_support_from_the_communists"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_seek_support_from_the_communists.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_NVG_communist_partisans"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_communist_partisans.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_NVG_german_partisans"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_german_partisans.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_NVG_goal_defense_of_democracy"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_goal_defense_of_democracy.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_NVG_parade_in_honor_of_democracies"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_parade_in_honor_of_democracies.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_NVG_execution_of_nazi_administrators"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_execution_of_nazi_administrators.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_NVG_russians_and_germans_against_nazi_oppression"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_russians_and_germans_against_nazi_oppression.dds"
+	}
+
+
+}
