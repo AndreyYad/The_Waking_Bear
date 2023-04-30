@@ -101,8 +101,8 @@ add_ideas = {
 
 # /// Economy /// #
 # TO-DO: Military production setup
-set_variable = {TNO_economy_type = 2}
-set_variable = {TNO_economy_subtype = 10}
+set_variable = { TNO_economy_type = token:Econ_Type_Corporatism }
+set_variable = { TNO_economy_subtype = token:Econ_Subtype_Dirigisme }
 
 # /// Military /// #
 # load_oob is loaded by scripted effects

@@ -52,7 +52,6 @@ country_event = {
 		MSK_Dissolution_Start = yes
 		NVG = { 
 			change_tag_from = MCW 
-			country_event = { id = novgorod.1 days = 5 }
 		}
 	}
 }

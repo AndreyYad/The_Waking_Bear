@@ -57,14 +57,6 @@ characters = {
 			expire = "2222.2.2"
 			id = -1
 		}
-		field_marshal = {
-			traits = { }
-			skill = 2
-			attack_skill = 5
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 3
-		}
 	}
 
 	NVG_Leonid_Zholudev_conservatism = {

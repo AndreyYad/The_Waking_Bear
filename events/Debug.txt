@@ -45,7 +45,17 @@ country_event = {
 		subtract_from_variable = { liberalism_pop = conservatism_pop }
 		subtract_from_variable = { liberalism_pop = progressivism_pop }
 
-		log = "[?conservatism_pop] - [?progressivism_pop] - [?liberalism_pop] - [?communist_pop]"
+		set_variable = { sum_pop = conservatism_pop }
+		add_to_variable = { sum_pop = progressivism_pop }
+		add_to_variable = { sum_pop = liberalism_pop }
+		add_to_variable = { sum_pop = communist_pop }
+
+		add_to_variable = { sum_pop = -100 }
+		multiply_variable = { sum_pop = -1 }
+
+		add_to_variable = { liberalism_pop = sum_pop }
+
+		log = "cons:[?conservatism_pop] - socdem: [?progressivism_pop] - lib: [?liberalism_pop] - com: [?communist_pop] - sum: [?sum_pop]"
 
 		set_popularities = {
 			communist = var:communist_pop

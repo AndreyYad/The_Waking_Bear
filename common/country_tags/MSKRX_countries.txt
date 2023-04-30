@@ -1,3 +1,3 @@
-# // Moskowien Redux // #
+# // The Waking Bear // #
 
 NVG = "countries/moskowien/NVG - Novgorod.txt"

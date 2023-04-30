@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		NVG_soldiers_of_democracy = {
+		NVG_soldiers_of_democracy_1 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NVG_soldiers_of_democracy"}
 			allowed = {
 				always = no
@@ -21,7 +21,28 @@ ideas = {
 			}
 		}
 
-		NVG_support_by_communist_partisans = {
+		NVG_soldiers_of_democracy_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NVG_soldiers_of_democracy"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				not = { has_country_flag = TWB_end_moscow_war }
+			}
+			removal_cost = -1
+			#picture = VOL_Neutral_Zone
+			modifier = {
+   				offence = 0.1
+   				defence = 0.1
+   				army_org_factor = 0.1
+			}
+		}
+
+		NVG_communist_partisans_1 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NVG_support_by_communist_partisans"}
 			allowed = {
 				always = no
@@ -36,12 +57,12 @@ ideas = {
 			removal_cost = -1
 			#picture = VOL_Neutral_Zone
 			modifier = {
-   				communist_drift = 0.003
-				exile_manpower_factor = 0.03
+   				communist_drift = 0.01
+				weekly_manpower = 10
 			}
 		}
 
-		NVG_communist_partisans = {
+		NVG_communist_partisans_2 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NVG_communist_partisans"}
 			allowed = {
 				always = no
@@ -56,7 +77,8 @@ ideas = {
 			removal_cost = -1
 			#picture = VOL_Neutral_Zone
 			modifier = {
-   				communist_drift = 0.001
+   				communist_drift = 0.03
+				weekly_manpower = 20
 				compliance_growth_on_our_occupied_states = -0.1
 				resistance_growth_on_our_occupied_states = 0.1
 			}
@@ -77,9 +99,29 @@ ideas = {
 			removal_cost = -1
 			#picture = VOL_Neutral_Zone
 			modifier = {
-   				communist_drift = 0.001
+				weekly_manpower = 15
 				compliance_growth_on_our_occupied_states = -0.1
 				resistance_growth_on_our_occupied_states = 0.1
+			}
+		}
+		
+		NVG_kremlin = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NVG_kremlin"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				
+			}
+			removal_cost = -1
+			#picture = VOL_Neutral_Zone
+			modifier = {
+				political_power_gain = 0.2
+				army_org = 10
 			}
 		}
 	}

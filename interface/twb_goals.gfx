@@ -47,5 +47,24 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/NVG/focus_NVG_russians_and_germans_against_nazi_oppression.dds"
 	}
 
+    SpriteType = {
+	name = "GFX_focus_NVG_urban_rebuilding"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_urban_rebuilding.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_NVG_start_the_restoration_of_the_kremlin"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_start_the_restoration_of_the_kremlin.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_NVG_rise_of_industry"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_rise_of_industry.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_focus_NVG_nowhere_to_retreat_novgorod_is_behind_us"
+	texturefile = "gfx/interface/goals/NVG/focus_NVG_nowhere_to_retreat_novgorod_is_behind_us.dds"
+	}
 
 }

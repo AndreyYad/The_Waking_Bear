@@ -31,15 +31,36 @@ division_template = {
 # /// Units /// #
 units = {
 	division = {
-		name = "Artileristskaya Gruppa 'Vystrel'"
-		location = "248"
+		name = "Artileristskaya Gruppa 'Svoboda'"
+		location = "117"
 		division_template = "Artileristskaya Gruppa"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "Povstancheskiy Otryad 'Spravedlivost'"
-		location = "11304"
+		name = "Povstancheskiy Otryad 'Svoboda'"
+		location = "117"
+		division_template = "Povstancheskiy Otryad"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Artileristskaya Gruppa 'Svoboda'"
+		location = "9234"
+		division_template = "Artileristskaya Gruppa"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Povstancheskiy Otryad 'Svoboda'"
+		location = "6095"
+		division_template = "Povstancheskiy Otryad"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Povstancheskiy Otryad 'Krasnaya sila'"
+		location = "3140"
 		division_template = "Povstancheskiy Otryad"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1

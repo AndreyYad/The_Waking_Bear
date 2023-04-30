@@ -33,13 +33,40 @@
  novgorod.2.a: "Жолудев - современный Невский"
 
  ### Ideas ###
- NVG_soldiers_of_democracy: "Солдаты демократии"
- NVG_soldiers_of_democracy_desc: "Солдаты нашей республики борются не только против немецкого гнёта, но и против любого другого деспотизма, ради свободы русского народа."
+ NVG_soldiers_of_democracy_1: "Солдаты демократии"
+ NVG_soldiers_of_democracy_1_desc: "Солдаты нашей республики борются не только против немецкого гнёта, но и против любого другого деспотизма, ради свободы русского народа."
+ NVG_soldiers_of_democracy_2: "Солдаты демократии"
+ NVG_soldiers_of_democracy_2_desc: "Солдаты нашей республики борются не только против немецкого гнёта, но и против любого другого деспотизма, ради свободы русского народа."
  NVG_communist_partisans: "Коммунистические партизаны"
+ NVG_communist_partisans_2: "Коммунистические партизаны"
  NVG_germany_partisans: "Немецкие партизаны"
+ NVG_kremlin: "Восстановлен Новгородский Кремль"
+ NVG_kremlin_desc: "Новгородский детинец - гордый величественный красавец на высоком берегу реки Волхов. Издревле Кремль служил оборонительным форпостом, его стены надежно охраняли Новгород. Пока стоят стены Кремля - жив свободолюбивый дух новгородцев. Лишь однажды дрогнул наш детинец, фашистские орудия разрушили его стены. Немцы провозгласили, что отныне обломки Кремля будут вечно напоминать о падении Новгорода. Символ свободы превратился в руины, но восстановив детинец мы докажем всему миру, что это ложь, невозможно сломить тех, кто готов биться до конца, у кого свобода и вольница в крови."
+
+ ### Decisions ###
+ NVG_building_category: "Строительные проекты"
+ NVG_restoration_of_towns: "Реставрация городов"
+ NVG_restoration_of_the_kremlin: "Реставрация Новгородского Детинца"
+ NVG_restoration_of_power: "Инвестиции в электросети"
+ NVG_restoration_of_industry: "Инвестиции в промышленость"
+
+ NVG_partisan_detachments_category: "Партизанские отряды"
+ NVG_partisans_com_1434: "Новгородский отряд коммунистов"
+ NVG_partisans_com_210: "Воронежский отряд коммунистов"
+ NVG_partisans_com_264: "Череповецкий отряд коммунистов"
+ NVG_partisans_com_195: "Петербургский отряд немцев"
+ NVG_partisans_com_1442: "Московский отряд немцев"
+ NVG_partisans_com_243: "Волгоградский отряд немцев"
+
+ ### Tooltips ###
+ NVG_spawn_com_partisan_state_tt: "В регионе §Y[PREV.GetName]§! будет сформирован отряд §Rкоммунистов§!"
+ NVG_spawn_ger_partisan_state_tt: "В регионе §Y[PREV.GetName]§! будет сформирован отряд §gне§Rмц§Yев§!"
+
+ ### Units ###
+ MSK_Dissolution_NVG_communists: "Отряды Коммунистических Партизан"
+ MSK_Dissolution_NVG_germans: "Отряды Немецких Повстанцев"
 
  ### Focuses ###
-
  NVG_veche_city: "Вечевой город"
  NVG_goal_defense_of_democracy: "Цель: Защита демократии"
  NVG_seek_support_from_the_communists: "Искать поддержку у коммунистов"
@@ -52,4 +79,4 @@
  NVG_execution_of_nazi_administrators: "Казнь нацистских управленцев"
  NVG_russians_and_germans_against_nazi_oppression: "Русские и немцы против нацистского гнёта"
  NVG_german_partisans: "Немецкие партизаны"
- NVG_nowhere_to_retreat_novgorod_is_behind_us: "Не куда отступать, за нами Новгород!"
+ NVG_nowhere_to_retreat_novgorod_is_behind_us: "Некуда отступать, за нами Новгород!"

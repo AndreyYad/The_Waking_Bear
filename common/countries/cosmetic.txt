@@ -1,6 +1,13 @@
+### The Waking Bear
 NVG_Kochetov = {
 	color = rgb { 219 13 13 }
 	color_ui = rgb { 219 13 13 }
+}
+###
+
+OST_GER = {
+	color = rgb { 102 100 86 }
+	color_ui = rgb { 102 100 86 }
 }
 
 UKR_GER = {
@@ -133,9 +140,19 @@ GRO_REICHSSTAAT_3 = {
 	color_ui = rgb { 73 76 71 }
 }
 
-MAD_USA = {
-	color = rgb { 100 138 190 }
-	color_ui = rgb { 100 138 190 }
+MAD_insurgent = {
+	color = rgb { 99 160 127}
+	color_ui = rgb { 99 160 127 }
+}
+
+MAD_GERMAN = {
+	color = rgb { 74 52 45 }
+	color_ui = rgb { 74 52 45 }
+}
+
+MDG_GERMAN = {
+	color = rgb { 74 52 45 }
+	color_ui = rgb { 74 52 45 }
 }
 
 IRI_COALITION = {
@@ -379,11 +396,6 @@ GER_reich = {
 	color_ui = rgb { 102 90 86 }
 }
 
-MAD_GER = {
-	color = rgb { 102 90 86 }
-	color_ui = rgb { 102 90 86 }
-}
-
 BRI_REPUBLIC = {
 	color = rgb { 119 33 33 }
 	color_ui = rgb { 119 33 33 }
@@ -419,11 +431,6 @@ AFR_USSR = {
 	color_ui = rgb { 178 34 34 }
 }
 
-MAD_OFN = {
-	color = rgb { 58 72 99 }
-	color_ui = rgb { 58 72 99 }
-}
-
 EGY_ITA = {
 	color = rgb { 124 154 112 }
 	color_ui = rgb { 124 154 112 }
@@ -442,6 +449,26 @@ IEA_CollapseNiceGuys = {
 RK_Italy = {
 	color = rgb { 84 122 99 }
 	color_ui = rgb { 84 122 99 }
+}
+
+HNS_HU = {
+	color = rgb { 121 159 153 }
+	color_ui = rgb { 121 159 153 }
+}
+
+HNS_HNS = {
+	color = rgb { 121 159 153 }
+	color_ui = rgb { 121 159 153 }
+}
+
+GRE_EAM = {
+	color = rgb { 180 31 5 }
+	color_ui = rgb { 180 31 5 }
+}
+
+GRE_EAM_post_war = {
+	color = rgb { 180 31 5 }
+	color_ui = rgb { 180 31 5 }
 }
 
 CRO_Yugoslavia = {
@@ -572,11 +599,6 @@ SPA_MILITARYCOUP = {
 CRI_GER = {
 	color = rgb { 124 176 167 }
 	color_ui = rgb { 124 176 167 }
-}
-
-ICE_USA = {
-	color = rgb { 44 82 142 }
-	color_ui = rgb { 44 82 142 }
 }
 
 IBR_CONGRESS = {
@@ -832,12 +854,12 @@ IBERIAN_GENERIC_SOCIALIST = {
 	color_ui = rgb { 208 119 119 }
 }
 
-SPRMilitary = {
+SPR_military = {
 	color = rgb { 196 157 143 }
 	color_ui = rgb { 196 157 143 }
 }
 
-SPRKingdom = {
+SPR_kingdom = {
 	color = rgb { 204 177 159 }
 	color_ui = rgb { 204 177 159 }
 }
@@ -1201,9 +1223,9 @@ ENG_meyer_UK = {
 	color_ui = rgb { 225 0 0 }
 }
 
-BLZ_Independence = {
-	color = rgb { 30 63 165 }
-	color_ui = rgb { 30 63 165 }
+BLZ_Belize = {
+	color = rgb { 125 78 148 }
+	color_ui = rgb { 125 78 148 }
 }
 
 PAK_mkf = {
@@ -1859,7 +1881,19 @@ KTG_Congo = {
 	color_ui = rgb { 150 102 82 }
 }
 
-
+# Suriname
+SUR_Republic_of_Suriname = {
+	color = rgb { 124 156 128 }
+	color_ui = rgb { 124 156 128 }
+}
+SUR_kingdom_of_netherlands = {
+	color = rgb { 128 115 87 }
+	color_ui = rgb { 128 115 87 }
+}
+CUR_Netherlands_Antilles = {
+	color = rgb { 156 126 96 }
+	color_ui = rgb { 156 126 96 }
+}
 
 WIN_unitary = {
 	color = rgb { 106 63 155 }
@@ -1889,6 +1923,31 @@ CHL_fascist = {
 BRA_military_coup = {
 	color = rgb { 125 139 72 }
 	color_ui = rgb { 125 139 72 }
+}
+
+CAL_civil_war = {
+	color = rgb { 203 99 87 }
+	color_ui = rgb { 203 99 87 }
+}
+
+DOM_Santo_Domingo = {
+	color = rgb { 189 100 56 }
+	color_ui = rgb { 189 100 56 }
+}
+
+DOM_OFN_OAS = {
+	color = rgb { 28 93 192 }
+	color_ui = rgb { 28 93 192 }
+}
+
+DOM_communist_rev = {
+	color = rgb { 186 71 58 }
+	color_ui = rgb { 214 125 83 }
+}
+
+HAI_communist_rev = {
+	color = rgb { 203 73 86 }
+	color_ui = rgb { 203 73 86 }
 }
 
 KOM_BURGSYS_COLLAPSE = {
@@ -2070,10 +2129,6 @@ SPH_Marcos = {
 	color_ui = rgb { 225 198 153 }
 }
 UPH_OFN_Mandate = {
-	color = rgb { 100 138 190 }
-	color_ui = rgb { 100 138 190 }
-}
-MAD_OFN_MILITARY = {
 	color = rgb { 100 138 190 }
 	color_ui = rgb { 100 138 190 }
 }
@@ -2632,4 +2687,24 @@ CAM_Republic = {
 CAM_PRK = {
 	color = rgb { 222 37 31 }
 	color_ui = rgb { 222 37 31 }
+}
+
+MAD_akfm = {
+	color = rgb { 188 55 55 }
+	color_ui = rgb { 188 55 55 }
+}
+
+MAD_tafama = {
+	color = rgb { 145 49 73 }
+	color_ui = rgb { 145 49 73 }
+}
+
+MAD_padesm = {
+	color = rgb { 99 160 127 }
+	color_ui = rgb { 99 160 127 }
+}
+
+MAD_arema = {
+	color = rgb { 155 43 64 }
+	color_ui = rgb { 155 43 64 }
 }
