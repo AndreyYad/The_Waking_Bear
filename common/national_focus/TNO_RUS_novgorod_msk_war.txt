@@ -53,7 +53,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NVG_goal_defense_of_democracy"
-			add_ideas = { NVG_soldiers_of_democracy_1 }
+			country_event = { id = novgorod.3 days = 1 }
 		}
 	}
 
@@ -107,10 +107,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NVG_contact_kochetov"
-			add_popularity = {
-    			ideology = communist
- 	   			popularity = 0.02
-			}
+			country_event = { id = novgorod.4 days = 1 }
 		}
 	}
 
@@ -266,6 +263,10 @@ focus_tree = {
 
 		}
 
+		select_effect = {
+			country_event = { id = novgorod.11 days = 2 }
+		}
+
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NVG_execution_of_nazi_administrators"
 		}
@@ -292,6 +293,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NVG_russians_and_germans_against_nazi_oppression"
+			country_event = { id = novgorod.5 days = 1 }
 		}
 	}
 

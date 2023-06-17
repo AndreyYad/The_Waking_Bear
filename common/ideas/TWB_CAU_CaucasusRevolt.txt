@@ -1,0 +1,30 @@
+ideas = {
+	country = {
+
+		CAU_partisan_activity = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CAU_partisan activity"}
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = {}
+
+			removal_cost = -1
+
+			#picture = VOL_Neutral_Zone
+
+			modifier = {
+				communist_drift = 0.15
+   				stability_weekly = -0.01
+			}
+		}
+
+	}
+}

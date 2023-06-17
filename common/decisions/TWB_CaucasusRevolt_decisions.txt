@@ -1,0 +1,203 @@
+CaucasusRevolt_category = {
+
+	NVG_CaucasusRevolt_send_weapons = {
+
+		icon = GFX_decision_generic_weapons
+		allowed = {
+			original_tag = NVG
+		}
+
+		available = {
+		}
+
+		visible = {
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		custom_cost_trigger = {
+			has_equipment = {
+ 				infantry_equipment > 499
+			}
+		}
+		custom_cost_text = decision_cost_500_inf
+
+		days_remove = 10
+
+		days_re_enable = 30
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NVG_CaucasusRevolt_send_weapons"
+			hidden_effect = {
+				#add_equipment_to_stockpile = {
+ 				#	type = infantry_equipment
+ 				#	amount = -500
+				#}
+			}
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NVG_CaucasusRevolt_send_weapons"
+
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 500
+				target = CSF
+			}
+
+			CSF = {
+				custom_effect_tooltip = CaucasusRevolt_increase_strength_tt
+				set_temp_variable = { random_min = 1 }
+				set_temp_variable = { random_max = 3 }
+				VarRandom = yes
+				add_to_variable = { CSF_CaucasusRevolt_progress = var_random } 
+			}
+		}
+	}
+
+	NVG_CaucasusRevolt_send_volunteer_squad = {
+
+		icon = GFX_decision_generic_guard
+		allowed = {
+			original_tag = NVG
+		}
+
+		available = {
+		}
+
+		visible = {
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		custom_cost_trigger = {
+			has_manpower > 499
+		}
+		custom_cost_text = decision_cost_50_pp_500_men
+
+		days_remove = 10
+
+		days_re_enable = 60
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NVG_CaucasusRevolt_send_weapons"
+			hidden_effect = {
+				add_manpower = -500
+			}
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NVG_CaucasusRevolt_send_weapons"
+			add_to_variable = { NVG_volunteers_to_csf = 1 }
+			CSF = {
+				add_manpower = 500
+				custom_effect_tooltip = CaucasusRevolt_increase_strength_tt
+				add_to_variable = { CSF_CaucasusRevolt_progress = 1 } 
+			}
+			custom_effect_tooltip = CaucasusRevolt_return_manpower_tt
+		}
+	}
+
+	NVG_CaucasusRevolt_arrange_border_conflict = {
+
+		icon = GFX_decision_border_war
+		allowed = {
+			original_tag = NVG
+		}
+
+		available = {
+		}
+
+		visible = {
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		cost = 50
+
+		days_remove = 7
+
+		days_re_enable = 90
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NVG_CaucasusRevolt_send_weapons"
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 237
+					num_provinces = 3
+					on_win = caucasus_revolt.1
+					on_lose = caucasus_revolt.3
+					#modifier = 0.1
+					#dig_in_factor = 0
+					#terrain_factor = 0
+				}	
+				defender = {
+					state = 235
+					num_provinces = 3
+					on_win = caucasus_revolt.2
+					on_lose = caucasus_revolt.4
+				}
+			}
+
+			CSF = {
+				custom_effect_tooltip = CaucasusRevolt_increase_strength_tt
+				add_to_variable = { CSF_CaucasusRevolt_progress = 1 } 
+			}
+		}
+
+	}
+
+	CAU_CaucasusRevolt_anti_terrorist_operation = {
+
+		icon = GFX_decision_generic_weapons
+		allowed = {
+			original_tag = CAU
+		}
+
+		available = {
+		}
+
+		visible = {
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		cost = 30
+
+		days_remove = 10
+
+		days_re_enable = 30
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NVG_CaucasusRevolt_send_weapons"
+			hidden_effect = {
+				#add_equipment_to_stockpile = {
+ 				#	type = infantry_equipment
+ 				#	amount = -500
+				#}
+			}
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NVG_CaucasusRevolt_send_weapons"
+
+			CSF = {
+				custom_effect_tooltip = CaucasusRevolt_lower_strength_tt
+				set_temp_variable = { random_min = -2 }
+				set_temp_variable = { random_max = -1 }
+				VarRandom = yes
+				add_to_variable = { CSF_CaucasusRevolt_progress = var_random } 
+			}
+		}
+	}
+
+}

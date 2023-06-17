@@ -32,3 +32,215 @@ country_event = {
 		promote_character = NVG_Leonid_Zholudev_despotism
 	}
 }
+
+# Набат во спасение
+country_event = {
+	id = novgorod.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event novgorod.3" }
+	title = novgorod.3.t
+	desc = novgorod.3.d
+	picture = GFX_NVG_Radio
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = novgorod.3.a
+		add_ideas = { NVG_soldiers_of_democracy_1 }
+		add_political_power = 20
+	}
+}
+
+# Красное и Белое
+country_event = {
+	id = novgorod.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event novgorod.4" }
+	title = novgorod.4.t
+	desc = novgorod.4.d
+	picture = GFX_NVG_Kochetov1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = novgorod.4.a
+		NVG_Vsevolod_Kochetov = {
+			add_corps_commander_role = {
+    			skill = 2
+    			attack_skill = 2
+    			defense_skill = 1
+    			planning_skill = 1
+    			logistics_skill = 3
+			}
+		}
+		add_popularity = {
+    		ideology = communist
+ 	   		popularity = 0.02
+		}
+		add_command_power = 20
+	}
+}
+
+# Помощь клауса
+country_event = {
+	id = novgorod.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event novgorod.5" }
+	title = novgorod.5.t
+	desc = novgorod.5.d
+	picture = GFX_NVG_Klaus
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = novgorod.5.a
+		NVG_Klaus_Fritzsche = {
+			add_corps_commander_role = {
+    			skill = 1
+    			attack_skill = 1
+    			defense_skill = 2
+    			planning_skill = 1
+    			logistics_skill = 2
+			}
+		}
+		add_popularity = {
+    		ideology = fascism
+ 	   		popularity = 0.1
+		}
+		add_command_power = 20
+	}
+}
+
+# Триумф Нео-Карфагена[1/5]
+country_event = {
+	id = novgorod.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event novgorod.6" }
+	title = novgorod.6.t
+	desc = novgorod.6.d
+	picture = GFX_NVG_Parad
+
+	is_triggered_only = yes
+
+	option = {
+		name = event_next
+		country_event = novgorod.7
+	}
+}
+
+# Триумф Нео-Карфагена[2/5]
+country_event = {
+	id = novgorod.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event novgorod.7" }
+	title = novgorod.7.t
+	desc = novgorod.7.d
+	picture = GFX_NVG_Parad
+
+	is_triggered_only = yes
+
+	option = {
+		name = event_next
+		country_event = novgorod.8
+	}
+	option = {
+		name = event_prev
+		country_event = novgorod.6
+	}
+}
+
+# Триумф Нео-Карфагена[3/5]
+country_event = {
+	id = novgorod.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event novgorod.8" }
+	title = novgorod.8.t
+	desc = novgorod.8.d
+	picture = GFX_NVG_Parad
+
+	is_triggered_only = yes
+
+	option = {
+		name = event_next
+		country_event = novgorod.9
+	}
+	option = {
+		name = event_prev
+		country_event = novgorod.7
+	}
+}
+
+# Триумф Нео-Карфагена[4/5]
+country_event = {
+	id = novgorod.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event novgorod.9" }
+	title = novgorod.9.t
+	desc = novgorod.9.d
+	picture = GFX_NVG_Parad
+
+	is_triggered_only = yes
+
+	option = {
+		name = event_next
+		country_event = novgorod.10
+	}
+	option = {
+		name = event_prev
+		country_event = novgorod.8
+	}
+}
+
+# Триумф Нео-Карфагена[5/5]
+country_event = {
+	id = novgorod.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event novgorod.10" }
+	title = novgorod.10.t
+	desc = novgorod.10.d
+	picture = GFX_NVG_Parad
+
+	is_triggered_only = yes
+
+	option = {
+		name = novgorod.10.a
+	}
+	option = {
+		name = event_prev
+		country_event = novgorod.9
+	}
+	option = {
+		name = event_start
+		country_event = novgorod.6
+	}
+}
+
+# Кара
+country_event = {
+	id = novgorod.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event novgorod.11" }
+	title = novgorod.11.t
+	desc = novgorod.11.d
+	picture = GFX_NVG_Kazny
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = novgorod.11.a
+		hidden_effect = {
+			country_event = novgorod.12
+		}
+	}
+}
+
+# Казнить нельзя помиловать
+country_event = {
+	id = novgorod.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event novgorod.12" }
+	title = novgorod.12.t
+	desc = novgorod.12.d
+	picture = GFX_NVG_Kazny
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = novgorod.12.a
+	}
+}

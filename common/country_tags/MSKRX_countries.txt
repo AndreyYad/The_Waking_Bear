@@ -1,3 +1,4 @@
 # // The Waking Bear // #
 
 NVG = "countries/moskowien/NVG - Novgorod.txt"
+CSF = "countries/CSF - Сaucasian Socialist Federation.txt"

@@ -12,4 +12,29 @@ spriteTypes = {
 	texturefile = "gfx/event_pictures/GFX_NVG_Zholudev.dds"
 	}
 
+    SpriteType = {
+	name = "GFX_NVG_Radio"
+	texturefile = "gfx/event_pictures/GFX_NVG_Radio.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_NVG_Kochetov1"
+	texturefile = "gfx/event_pictures/GFX_NVG_Kochetov1.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_NVG_Klaus"
+	texturefile = "gfx/event_pictures/GFX_NVG_Klaus.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_NVG_Parad"
+	texturefile = "gfx/event_pictures/GFX_NVG_Parad.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_NVG_Kazny"
+	texturefile = "gfx/event_pictures/GFX_NVG_Kazny.dds"
+	}
+
 }

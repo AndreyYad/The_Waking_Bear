@@ -5,6 +5,11 @@ NVG = {
 	color_ui = rgb { 76 167 206 }
 }
 
+CSF = {
+	color = rgb { 195 41 62 }
+	color_ui = rgb { 195 41 62 }
+}
+
 #reload countrycolors
 SAA = {
 	color = rgb { 60 60 60 }

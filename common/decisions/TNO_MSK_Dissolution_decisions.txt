@@ -1,4 +1,4 @@
-MSK_Dissolution_DecisionCategory = {
+TWB_MSK_Dissolution_DecisionCategory = {
 
 	# // INDEX // #
 	# /// Unification /// #
@@ -7,8 +7,18 @@ MSK_Dissolution_DecisionCategory = {
 
 	# /// Unification /// #
 	MSK_Dissolution_Decision_Unify = {
+		icon = GFX_decision_diplo_moskowien
 		available = {
-			MSK_Dissolution_ScriptedTrigger_WonDissolution = yes
+			or = {
+				and = {
+					MSK_Dissolution_ScriptedTrigger_WonDissolution = yes
+					or = {
+						NOT = { tag = NVG }
+						has_completed_focus = NVG_nowhere_to_retreat_novgorod_is_behind_us
+					}
+				}
+				has_country_flag = twb_debug
+			}
 		}
 		ai_will_do = {
 			base = 100
@@ -16,11 +26,41 @@ MSK_Dissolution_DecisionCategory = {
 		fire_only_once = yes
 		complete_effect = {
 			MSK_Dissolution_Win = yes
+			if = {
+				limit = { tag = NVG }
+				set_politics = { ruling_party = paternalism }
+
+				set_variable = { communist_pop = party_popularity@communist }
+				set_variable = { fascism_pop = party_popularity@fascism }
+				set_variable = { despotism_pop = party_popularity@despotism }
+
+				multiply_variable = { communist_pop = 100 }
+				multiply_variable = { fascism_pop = 100 }
+				multiply_variable = { despotism_pop = 100 }
+
+				set_variable = { sum_pop = communist_pop }
+				add_to_variable = { sum_pop = fascism_pop }
+				add_to_variable = { sum_pop = despotism_pop }
+
+				add_to_variable = { sum_pop = -100 }
+				multiply_variable = { sum_pop = -1 }
+				add_to_variable = { despotism_pop = sum_pop }
+
+
+				log = "com:[?communist_pop] - fasc: [?fascism_pop] - desp: [?despotism_pop] - sum: [?sum_pop]"
+
+				set_popularities = {
+					communist = var:communist_pop
+					fascism = var:fascism_pop
+					paternalism = var:despotism_pop
+				}
+			}
 		}
 	}
 
 	# /// Dealing with Sectors /// #
 	MSK_Dissolution_Decision_DealWithSector0 = {
+		icon = GFX_decision_generic_assault
 		visible = {
 			MSK_Dissolution_ScriptedTrigger_CanSeeSectorDecisions = yes
 			NOT = {
@@ -61,11 +101,15 @@ MSK_Dissolution_DecisionCategory = {
 		fire_only_once = yes
 		
 		complete_effect = {
+			NTI = { MSK_Country_Sector_Info = yes }
+			hidden_effect = {
 			set_temp_variable = { v = NTI } 
 			MSK_Dissolution_DealWithSector = yes
+			}
 		}
 	}
 	MSK_Dissolution_Decision_DealWithSector1 = {
+		icon = GFX_decision_generic_assault
 		visible = {
 			MSK_Dissolution_ScriptedTrigger_CanSeeSectorDecisions = yes
 			NOT = {
@@ -104,6 +148,7 @@ MSK_Dissolution_DecisionCategory = {
 		}
 	}
 	MSK_Dissolution_Decision_DealWithSector2 = {
+		icon = GFX_decision_generic_assault
 		visible = {
 			MSK_Dissolution_ScriptedTrigger_CanSeeSectorDecisions = yes
 			NOT = {
@@ -142,6 +187,7 @@ MSK_Dissolution_DecisionCategory = {
 		}
 	}
 	MSK_Dissolution_Decision_DealWithSector3 = {
+		icon = GFX_decision_generic_assault
 		visible = {
 			MSK_Dissolution_ScriptedTrigger_CanSeeSectorDecisions = yes
 			NOT = {
@@ -180,6 +226,7 @@ MSK_Dissolution_DecisionCategory = {
 		}
 	}
 	MSK_Dissolution_Decision_DealWithSector4 = {
+		icon = GFX_decision_generic_assault
 		visible = {
 			MSK_Dissolution_ScriptedTrigger_CanSeeSectorDecisions = yes
 			NOT = {
@@ -218,6 +265,7 @@ MSK_Dissolution_DecisionCategory = {
 		}
 	}
 	MSK_Dissolution_Decision_DealWithSector5 = {
+		icon = GFX_decision_generic_assault
 		visible = {
 			MSK_Dissolution_ScriptedTrigger_CanSeeSectorDecisions = yes
 			NOT = {

@@ -1,0 +1,8 @@
+spriteTypes = {	
+	
+    SpriteType = {
+	name = "GFX_news_event_NVG_dissolution"
+	texturefile = "gfx/event_pictures/news/news_event_NVG_dissolution.dds"
+	}
+
+}

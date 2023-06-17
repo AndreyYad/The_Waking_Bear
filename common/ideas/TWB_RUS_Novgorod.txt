@@ -124,5 +124,32 @@ ideas = {
 				army_org = 10
 			}
 		}
+
+		NVG_partisan_republic = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NVG_partisan_republic"}
+
+			allowed = {
+				always = no
+			}
+
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				
+			}
+
+			removal_cost = -1
+
+			#picture = VOL_Neutral_Zone
+
+			modifier = {
+				conscription = 0.05
+				political_power_gain = -0.3
+				army_org_regain = 0.015
+			}
+		}
 	}
 }

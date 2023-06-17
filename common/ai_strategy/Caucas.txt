@@ -1,0 +1,15 @@
+CAU_army_in_Dag = {
+	allowed = {
+		original_tag = CAU
+	}
+	
+	enable = {
+		has_idea = CAU_partisan_activity
+	}
+	
+	ai_strategy = { 
+		type = put_unit_buffers 
+		ratio = 0.3
+		states = { 1564 } 
+	}
+}

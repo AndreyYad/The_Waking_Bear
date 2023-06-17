@@ -1,0 +1,365 @@
+defined_text = {
+    name = TWB_MSK_name_NTA
+    text = {
+        trigger = {
+            NTA = { exists = yes }
+        }
+        localization_key = info_country_NTA
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_SHI
+    text = {
+        trigger = {
+            SHI = { exists = yes }
+        }
+        localization_key = info_country_SHI
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_OZT
+    text = {
+        trigger = {
+            OZT = { exists = yes }
+        }
+        localization_key = info_country_OZT
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_TVR
+    text = {
+        trigger = {
+            TVR = { exists = yes }
+        }
+        localization_key = info_country_TVR
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_TVR
+    text = {
+        trigger = {
+            TVR = { exists = yes }
+        }
+        localization_key = info_country_TVR
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_OZM
+    text = {
+        trigger = {
+            OZM = { exists = yes }
+        }
+        localization_key = info_country_OZM
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_LUF
+    text = {
+        trigger = {
+            LUF = { exists = yes }
+        }
+        localization_key = info_country_LUF
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_SNP
+    text = {
+        trigger = {
+            SNP = { exists = yes }
+        }
+        localization_key = info_country_SNP
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_PFT
+    text = {
+        trigger = {
+            PFT = { exists = yes }
+        }
+        localization_key = info_country_PFT
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_PSK
+    text = {
+        trigger = {
+            PSK = { exists = yes }
+        }
+        localization_key = info_country_PSK
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_NVG
+    text = {
+        trigger = {
+            NVG = { exists = yes }
+        }
+        localization_key = info_country_NVG
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_VVV
+    text = {
+        trigger = {
+            VVV = { exists = yes }
+        }
+        localization_key = info_country_VVV
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_ORL
+    text = {
+        trigger = {
+            ORL = { exists = yes }
+        }
+        localization_key = info_country_ORL
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_OZO
+    text = {
+        trigger = {
+            OZO = { exists = yes }
+        }
+        localization_key = info_country_OZO
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_RFS
+    text = {
+        trigger = {
+            RFS = { exists = yes }
+        }
+        localization_key = info_country_RFS
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_PAU
+    text = {
+        trigger = {
+            PAU = { exists = yes }
+        }
+        localization_key = info_country_PAU
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_POP
+    text = {
+        trigger = {
+            POP = { exists = yes }
+        }
+        localization_key = info_country_POP
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_OZA
+    text = {
+        trigger = {
+            OZA = { exists = yes }
+        }
+        localization_key = info_country_OZA
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_OZP
+    text = {
+        trigger = {
+            OZP = { exists = yes }
+        }
+        localization_key = info_country_OZP
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_name_POV
+    text = {
+        trigger = {
+            POV = { exists = yes }
+        }
+        localization_key = info_country_POV
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+###
+
+defined_text = {
+    name = TWB_MSK_Sector1
+    text = {
+        trigger = {
+            or = {
+                NTA = { exists = yes }
+                SHI = { exists = yes }
+                OZT = { exists = yes }
+            }
+        }
+        localization_key = TWB_MSK_Dissolution_Sector_1
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_Sector2
+    text = {
+        trigger = {
+            or = {
+                TVR = { exists = yes }
+                OZM = { exists = yes }
+                LUF = { exists = yes }
+            }
+        }
+        localization_key = TWB_MSK_Dissolution_Sector_2
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_Sector3
+    text = {
+        trigger = {
+            or = {
+                SNP = { exists = yes }
+                PFT = { exists = yes }
+                PSK = { exists = yes }
+                NVG = { exists = yes }
+                VVV = { exists = yes }
+            }
+        }
+        localization_key = TWB_MSK_Dissolution_Sector_3
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_Sector4
+    text = {
+        trigger = {
+            or = {
+                ORL = { exists = yes }
+                OZO = { exists = yes }
+                RFS = { exists = yes }
+            }
+        }
+        localization_key = TWB_MSK_Dissolution_Sector_4
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+defined_text = {
+    name = TWB_MSK_Sector5
+    text = {
+        trigger = {
+            or = {
+                PAU = { exists = yes }
+                POP = { exists = yes }
+                OZA = { exists = yes }
+                OZP = { exists = yes }
+                POV = { exists = yes }
+            }
+        }
+        localization_key = TWB_MSK_Dissolution_Sector_5
+    }
+    text = {
+        localization_key = none
+    }
+}
+
+###
+
+defined_text = {
+    name = TWB_MSK_category_desc
+    text = {
+        trigger = {
+            MSK_Dissolution_ScriptedTrigger_WonDissolution = no
+        }
+        localization_key = TWB_MSK_Dissolution_era_of_sectors
+    }
+    text = {
+        localization_key = TWB_MSK_Dissolution_win
+    }
+}

@@ -1,0 +1,44 @@
+# |===[ Characters ]===|
+#
+# 
+# CSF_Semyon_Budyonny
+
+characters = {
+
+	CSF_Semyon_Budyonny_Revolt = {
+		name = CSF_Semyon_Budyonny
+		portraits = {
+			civilian={
+				large="gfx/leaders/CSF/Portrait_CSF_Semyon_Budyonny.dds"
+			}
+		}
+		country_leader = {
+			#desc = "CSF_Semyon_Budyonny_desc"
+			ideology = despotism_partisan_movement_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+	}
+
+	CSF_Semyon_Budyonny = {
+		name = CSF_Semyon_Budyonny
+		portraits = {
+			civilian={
+				large="gfx/leaders/CSF/Portrait_CSF_Semyon_Budyonny.dds"
+			}
+		}
+		country_leader = {
+			#desc = "CSF_Semyon_Budyonny_desc"
+			ideology = communist_stratocratic_communism_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+		corps_commander = {
+    		skill = 1
+    		attack_skill = 2
+    		defense_skill = 3
+    		planning_skill = 4
+    		logistics_skill = 5
+		}
+	}
+}

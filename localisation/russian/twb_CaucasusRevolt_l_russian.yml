@@ -1,0 +1,24 @@
+﻿l_russian:
+
+ ### Tooltip ###
+ CaucasusRevolt_increase_strength_tt: "Повышение готовности к §Rвосстанию§!"
+ CaucasusRevolt_lower_strength_tt: "Понижение готовности к §Rвосстанию§!"
+ CaucasusRevolt_return_manpower_tt: "§GПосле выполнения своих задач выжившие добровольцы вернуться§!"
+
+ ### Ideas ###
+ CAU_partisan_activity: "Партизанская активность"
+
+ ### Events ###
+ caucasus_revolt.5.t: "Будёновцы подняли головы"
+ caucasus_revolt.5.d: ""
+ caucasus_revolt.5.a: "Кошмар!"
+
+ ### Decisions ###
+ CaucasusRevolt_category: "Кавказские партизаны"
+ CaucasusRevolt_category_desc: "[?CSF.CSF_CaucasusRevolt_progress]/20"
+
+ NVG_CaucasusRevolt_send_weapons: "Отправить оружие"
+ NVG_CaucasusRevolt_send_volunteer_squad: "Отправить отряд добровольцев"
+ NVG_CaucasusRevolt_arrange_border_conflict: "Организовать рейд на Кавказию"
+
+ CAU_CaucasusRevolt_anti_terrorist_operation: "Антитеррористические операция"

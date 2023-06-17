@@ -9,9 +9,9 @@ country_event = {
 	
 	option = {
 		name = ""
-		NVG = {
-			add_state_core = 1434
-			transfer_state = 1434
+		CSF = {
+			add_state_core = 1564
+			transfer_state = 1564
 		}
 	}	
 }
@@ -69,10 +69,74 @@ country_event = {
 	option = {
 		name = "Верная популярность партий"
 
-		set_popularities = {
-			despotism = 91
-			communist = 9
-		}
+				set_variable = { communist_pop = party_popularity@communist }
+				set_variable = { fascism_pop = party_popularity@fascism }
+				set_variable = { despotism_pop = party_popularity@despotism }
 
+				multiply_variable = { communist_pop = 100 }
+				multiply_variable = { fascism_pop = 100 }
+				multiply_variable = { despotism_pop = 100 }
+
+				set_variable = { sum_pop = communist_pop }
+				add_to_variable = { sum_pop = fascism_pop }
+				add_to_variable = { sum_pop = despotism_pop }
+
+				add_to_variable = { sum_pop = -100 }
+				multiply_variable = { sum_pop = -1 }
+				add_to_variable = { despotism_pop = sum_pop }
+
+
+				log = "com:[?communist_pop] - fasc: [?fascism_pop] - desp: [?despotism_pop] - sum: [?sum_pop]"
+
+				set_popularities = {
+					communist = var:communist_pop
+					fascism = var:fascism_pop
+					paternalism = var:despotism_pop
+				}
+
+	}	
+}
+
+country_event = {
+	id = debug.3
+	title = "Начать гражданскую войну"
+	desc = ""
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Приступим к делу"
+		country_event = { days = 1 id = MSK_dissolution.3 }
+	}	
+	option = {
+		name = "Всему своё время"
+		ai_chance = {
+			base = 1000
+		}
+	}	
+}
+
+country_event = {
+	id = debug.4
+	title = "Активизировать кавказских партизан"
+	desc = ""
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Приступим"
+		NVG = { NVG_volunteers_to_csf = 0 }
+		CSF = { set_variable = { CSF_CaucasusRevolt_progress = 7 } }
+		set_global_flag = CAUCASIAN_PARTISANS
+	}	
+	option = {
+		name = "Ждём"
+	}	
+	option = {
+		name = "Тест рандома"
+		set_temp_variable = { random_min = 3 }
+		set_temp_variable = { random_max = 10 }
+		VarRandom = yes
+		log = "[?var_random]"
 	}	
 }

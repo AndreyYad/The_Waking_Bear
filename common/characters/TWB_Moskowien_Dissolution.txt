@@ -35,7 +35,7 @@ characters = {
 		}
 		country_leader = {
 			#desc = "MSK_Bronislav_Kaminski_desc"
-			ideology = despotism_interim_government_subtype
+			ideology = despotism_partisan_movement_subtype
 			expire = "2222.2.2"
 			id = -1
 		}
@@ -52,8 +52,26 @@ characters = {
 			}
 		}
 		country_leader = {
-			#desc = "MSK_Bronislav_Kaminski_desc"
-			ideology = despotism_interim_government_subtype
+			desc = "POLITICS_LEONID_ZHOLUDEV_DESC"
+			ideology = despotism_partisan_movement_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+	}
+
+	NVG_Leonid_Zholudev_paternalism = {
+		name = NVG_Leonid_Zholudev
+		portraits = {
+			civilian={
+				large="gfx/leaders/NVG/Portrait_NVG_Leonid_Zholudev.dds"
+			}
+			army = {
+				large="gfx/leaders/NVG/Portrait_NVG_Leonid_Zholudev.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_LEONID_ZHOLUDEV_DESC"
+			ideology = paternalism_provisional_government_subtype
 			expire = "2222.2.2"
 			id = -1
 		}
@@ -70,18 +88,17 @@ characters = {
 			}
 		}
 		country_leader = {
-			#desc = "MSK_Bronislav_Kaminski_desc"
+			desc = "POLITICS_LEONID_ZHOLUDEV_DESC"
 			ideology = conservatism_paternalistic_conservatism_subtype
 			expire = "2222.2.2"
 			id = -1
 		}
-		field_marshal = {
-			traits = { }
-			skill = 2
-			attack_skill = 5
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 3
+		corps_commander = {
+    		skill = 1
+    		attack_skill = 2
+    		defense_skill = 3
+    		planning_skill = 4
+    		logistics_skill = 5
 		}
 	}
 
@@ -129,4 +146,46 @@ characters = {
 			id = -1
 		}
 	}
+
+	NVG_Klaus_Fritzsche = {
+		name = NVG_Klaus_Fritzsche
+		portraits = {
+			civilian={
+				large="gfx/leaders/NVG/Portrait_NVG_Klaus_Fritzsche.dds"
+			}
+			army = {
+				large="gfx/leaders/NVG/Portrait_NVG_Klaus_Fritzsche.dds"
+			}
+		}
+		country_leader = {
+			#desc = "MSK_Bronislav_Kaminski_desc"
+			ideology = fascism_rurikism_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+		#corps_commander = {
+    	#	skill = 1
+    	#	attack_skill = 1
+    	#	defense_skill = 3
+    	#	planning_skill = 2
+    	#	logistics_skill = 1
+		#}
+	}
+
+	NVG_Alexey_Kuznetsov = {
+		name = NVG_Alexey_Kuznetsov
+		portraits = {
+			army = {
+				large="gfx/leaders/NVG/Portrait_NVG_Alexey_Kuznetsov.dds"
+			}
+		}
+		corps_commander = {
+    		skill = 2
+    		attack_skill = 1
+    		defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 1
+		}
+	}
+
 }

@@ -1,0 +1,8 @@
+VarRandom = {
+	set_variable_to_random = {
+		var = var_random
+		min = var:random_min
+		max = var:random_max
+		integer = yes
+	}
+}

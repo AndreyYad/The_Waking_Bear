@@ -19,10 +19,15 @@ recruit_character = NVG_Generic_Vacant
 recruit_character = NVG_VNS
 recruit_character = NVG_none_liberal
 recruit_character = NVG_Leonid_Zholudev_despotism
+recruit_character = NVG_Leonid_Zholudev_paternalism
 recruit_character = NVG_Leonid_Zholudev_conservatism
-recruit_character = NVG_Yuri_Orlov
 recruit_character = NVG_Vsevolod_Kochetov
+recruit_character = NVG_Klaus_Fritzsche
 recruit_character = NVG_Andrey_Sinyavsky
+
+# /// Army Characters ///
+recruit_character = NVG_Alexey_Kuznetsov
+
 fill_empty_minister_nochecks = yes
 
 # /// Technologies /// #

@@ -5,7 +5,7 @@ tags={
 }
 dependencies={
 	"The New Order: Last Days of Europe"
-	"2438003901"
+	"The New Order: Last Days Of Europe (RUSSIAN)"
 }
 supported_version="1.12.*"
 remote_file_id="2963115873"

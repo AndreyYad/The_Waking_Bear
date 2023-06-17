@@ -186,7 +186,10 @@ NVG_partisan_detachments_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: NVG_partisans_com_1434"
 			1434 = { PREV = { custom_effect_tooltip = NVG_spawn_com_partisan_state_tt } }
-			hidden_effect = { load_oob = NVG_partisans_com_1434 }
+			hidden_effect = { 
+				load_oob = NVG_partisans_com_1434 
+				add_command_power = -15
+			}
 		}
 	}
 
@@ -225,7 +228,10 @@ NVG_partisan_detachments_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: NVG_partisans_com_264"
 			264 = { PREV = { custom_effect_tooltip = NVG_spawn_com_partisan_state_tt } }
-			hidden_effect = { load_oob = NVG_partisans_com_264 }
+			hidden_effect = { 
+				load_oob = NVG_partisans_com_264
+				add_command_power = -25
+			}
 		}
 	}
 
@@ -264,7 +270,10 @@ NVG_partisan_detachments_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: NVG_partisans_com_210"
 			210 = { PREV = { custom_effect_tooltip = NVG_spawn_com_partisan_state_tt } }
-			hidden_effect = { load_oob = NVG_partisans_com_210 }
+			hidden_effect = { 
+				load_oob = NVG_partisans_com_210
+				add_command_power = -25
+			}
 		}
 	}
 
@@ -303,7 +312,10 @@ NVG_partisan_detachments_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: NVG_partisans_ger_195"
 			195 = { PREV = { custom_effect_tooltip = NVG_spawn_ger_partisan_state_tt } }
-			hidden_effect = { load_oob = NVG_partisans_ger_195 }
+			hidden_effect = { 
+				load_oob = NVG_partisans_com_195
+				add_command_power = -25
+			}
 		}
 	}
 
@@ -342,7 +354,10 @@ NVG_partisan_detachments_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: NVG_partisans_ger_1442"
 			1442 = { PREV = { custom_effect_tooltip = NVG_spawn_ger_partisan_state_tt } }
-			hidden_effect = { load_oob = NVG_partisans_ger_1442 }
+			hidden_effect = { 
+				load_oob = NVG_partisans_com_1442
+				add_command_power = -25
+			}
 		}
 	}
 
@@ -381,7 +396,10 @@ NVG_partisan_detachments_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: NVG_partisans_ger_243"
 			243 = { PREV = { custom_effect_tooltip = NVG_spawn_ger_partisan_state_tt } }
-			hidden_effect = { load_oob = NVG_partisans_ger_243 }
+			hidden_effect = { 
+				load_oob = NVG_partisans_com_243
+				add_command_power = -15
+			}
 		}
 	}
 }

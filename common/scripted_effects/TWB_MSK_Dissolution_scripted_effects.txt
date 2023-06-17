@@ -1,0 +1,6 @@
+MSK_Country_Sector_Info = {
+	if = {
+		limit = { exists = yes }
+		custom_effect_tooltip = none
+	}
+}

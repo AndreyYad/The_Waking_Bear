@@ -1,0 +1,55 @@
+﻿l_russian:
+
+ none: ""
+
+ TWB_MSK_Dissolution_era_of_sectors: "[TWB_MSK_Sector1][TWB_MSK_name_NTA][TWB_MSK_name_SHI][TWB_MSK_name_OZT][TWB_MSK_Sector2][TWB_MSK_name_TVR][TWB_MSK_name_OZM][TWB_MSK_name_LUF][TWB_MSK_Sector3][TWB_MSK_name_SNP][TWB_MSK_name_PFT][TWB_MSK_name_PSK][TWB_MSK_name_NVG][TWB_MSK_name_VVV][TWB_MSK_Sector4][TWB_MSK_name_ORL][TWB_MSK_name_OZO][TWB_MSK_name_RFS][TWB_MSK_Sector5][TWB_MSK_name_PAU][TWB_MSK_name_POP][TWB_MSK_name_OZA][TWB_MSK_name_OZP][TWB_MSK_name_POV]"
+ TWB_MSK_Dissolution_win: "Наша армия смогла подавить все остальные силы в развалившейся Московии.\n\n§4Пора объявить о нашей победе!§!"
+ TWB_MSK_Dissolution_DecisionCategory_desc: "[TWB_MSK_category_desc]"
+
+ TWB_MSK_Dissolution_Sector_1: "\nСектор 1:\n"
+ TWB_MSK_Dissolution_Sector_2: "\nСектор 2:\n"
+ TWB_MSK_Dissolution_Sector_3: "\nСектор 3:\n"
+ TWB_MSK_Dissolution_Sector_4: "\nСектор 4:\n"
+ TWB_MSK_Dissolution_Sector_5: "\nСектор 5:\n"
+
+ info_country_NTA: "([NTA.GetFlag]) [NTA.GetNameDefCap]\n"
+ info_country_SHI: "([SHI.GetFlag]) [SHI.GetNameDefCap]\n"
+ info_country_OZT: "([OZT.GetFlag]) [OZT.GetNameDefCap]\n"
+ info_country_TVR: "([TVR.GetFlag]) [TVR.GetNameDefCap]\n"
+ info_country_TVR: "([TVR.GetFlag]) [TVR.GetNameDefCap]\n"
+ info_country_OZM: "([OZM.GetFlag]) [OZM.GetNameDefCap]\n"
+ info_country_LUF: "([LUF.GetFlag]) [LUF.GetNameDefCap]\n"
+ info_country_SNP: "([SNP.GetFlag]) [SNP.GetNameDefCap]\n"
+ info_country_PFT: "([PFT.GetFlag]) [PFT.GetNameDefCap]\n"
+ info_country_PSK: "([PSK.GetFlag]) [PSK.GetNameDefCap]\n"
+ info_country_NVG: "([NVG.GetFlag]) [NVG.GetNameDefCap]\n"
+ info_country_VVV: "([VVV.GetFlag]) [VVV.GetNameDefCap]\n"
+ info_country_ORL: "([ORL.GetFlag]) [ORL.GetNameDefCap]\n"
+ info_country_OZO: "([OZO.GetFlag]) [OZO.GetNameDefCap]\n"
+ info_country_RFS: "([RFS.GetFlag]) [RFS.GetNameDefCap]\n"
+ info_country_PAU: "([PAU.GetFlag]) [PAU.GetNameDefCap]\n"
+ info_country_POP: "([POP.GetFlag]) [POP.GetNameDefCap]\n"
+ info_country_OZA: "([OZA.GetFlag]) [OZA.GetNameDefCap]\n"
+ info_country_OZP: "([OZP.GetFlag]) [OZP.GetNameDefCap]\n"
+ info_country_POV: "([POV.GetFlag]) [POV.GetNameDefCap]\n"
+
+ TWB_MSK_Dissolution_DecisionCategory: "Коллапс Московии"
+
+ MSK_Dissolution_Decision_DealWithSector0: "Начать наступление на §YТихвин§!"
+ MSK_Dissolution_Decision_DealWithSector1: "Начать наступление на §YСектор 1§!"
+ MSK_Dissolution_Decision_DealWithSector2: "Начать наступление на §YСектор 2§!"
+ MSK_Dissolution_Decision_DealWithSector3: "Начать наступление на §YСектор 3§!"
+ MSK_Dissolution_Decision_DealWithSector4: "Начать наступление на §YСектор 4§!"
+ MSK_Dissolution_Decision_DealWithSector5: "Начать наступление на §YСектор 5§!"
+
+ MSK_Dissolution_Decision_Unify: "Объеденить §YМосковию§!"
+
+ msk_dissolution_news.5.t: "[Get_newspaper_header]Новгородские партизаны объединяют Московию"
+ msk_dissolution_news.5.desc: "На сегодняшний день из охваченной войной немецкого Рейхскомиссариата Московия приходит разрозненная информация о падении немецкой администрации, исполняющей свои обязательства по подавлению русского восстания в регионе. Сегодня, из проверенных источников в Белом Доме, журналистами было получено подтверждение – немецкая гегемония на теле окровавленной России была порушена штыками и винтовками русских, уставших от гнёта немецкого сапога! Пока что это вся информация, которую изданию поведали в Белом Доме. Наши агенты на местах постараются держать нас в курсе событий, и мы уже готовы с вами поделиться более точной информацией – на данный момент на месте бывшей немецкой администрации заседательствует про-демократический Временый Совет во главе с Председателем Жолудевым Леонидом Васильевичем.\n\nО личности Председателя крайне мало подтвержденной информации. Наверняка известно, что ранее в годы Второй Мировой Войны он был командиром авиаэскадрильи Советской России, и уже после, неизвестно в какой момент, стал лидером партизанской организации.\n"
+ msk_dissolution_news.5.a: "Этот мужчина – русский, он сражается за свободу!"
+ msk_dissolution_news.5.b: "Наш кошмар стал явью..."
+ msk_dissolution_news.5.c: "Надолго ли русские вернули свободу?"
+ msk_dissolution_news.5.d: "Слава генералу Жолудеву!"
+
+ TWB_MCW_dissolution: "Распад Московии"
+ TWB_MCW_dissolution_desc: "Однажды история будет рассказана полностью. История миллионов душ - каждая со своей собственной судьбой. Чем больше шрамов откроется на теле Европы, тем больше мы узнаем."

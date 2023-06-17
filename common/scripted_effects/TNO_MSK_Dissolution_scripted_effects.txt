@@ -1238,7 +1238,11 @@ MSK_Dissolution_Start = {
 			array = global.MSK_Dissolution_Tags
 			MSK_Dissolution_SetupTag_OOB = yes
 			add_to_array = { global.MSK_Dissolution_Tags_Debug = THIS }
-			add_ideas = MCW_dissolution
+			add_ideas = TWB_MCW_dissolution
+			if = {
+				limit = { tag = NVG }
+				add_ideas = NVG_partisan_republic
+			}
 			add_manpower = 100000
 		}
 		# // Sus // #
@@ -1524,14 +1528,17 @@ MSK_Dissolution_Win = {
 		limit = {
 			is_ai = no
 		}
-		news_event = {
-			id = msk_dissolution_news.4
-			days = 1
+		if = {
+			limit = { tag = NVG }
+			news_event = msk_dissolution_news.5
+		}
+		else = {
+			news_event = msk_dissolution_news.4
 		}
 	}
 	MSK_Dissolution_Clear = yes
 	swap_ideas = {
-		remove_idea = MCW_dissolution
+		remove_idea = TWB_MCW_dissolution
 		add_idea = MCW_emergence
 	}
 	if = {

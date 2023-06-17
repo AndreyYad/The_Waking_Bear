@@ -1,0 +1,93 @@
+add_namespace = caucasus_revolt
+
+# Победа (Новгород)
+country_event = {
+	id = caucasus_revolt.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event caucasus_revolt.1" }
+
+	is_triggered_only = yes
+
+	option = {
+		name = caucasus_revolt.1.a
+		army_experience = 10
+		add_war_support = 0.05
+		CSF = {
+			custom_effect_tooltip = CaucasusRevolt_increase_strength_tt
+			add_to_variable = { CSF_CaucasusRevolt_progress = 1 } 
+		}
+	}
+}
+
+# Победа (Кавказия)
+country_event = {
+	id = caucasus_revolt.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event caucasus_revolt.1" }
+
+	is_triggered_only = yes
+
+	option = {
+		name = caucasus_revolt.2.a
+		army_experience = 10
+		add_war_support = 0.1
+	}
+}
+
+# Поражение (Новгород)
+country_event = {
+	id = caucasus_revolt.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event caucasus_revolt.1" }
+
+	is_triggered_only = yes
+
+	option = {
+		name = caucasus_revolt.3.a
+		army_experience = 5
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+
+# Поражение (Кавказия)
+country_event = {
+	id = caucasus_revolt.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event caucasus_revolt.1" }
+
+	is_triggered_only = yes
+
+	option = {
+		name = caucasus_revolt.4.a
+		army_experience = 5
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+
+# Активизация партизан (Кавказия)
+country_event = {
+	id = caucasus_revolt.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event caucasus_revolt.1" }
+
+	title = caucasus_revolt.5.t
+	desc = caucasus_revolt.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = caucasus_revolt.5.a
+		add_ideas = CAU_partisan_activity
+		create_country_leader = {
+			name = CSF_Semyon_Budyonny
+			expire = "2222.1.1"
+			ideology = communist_stratocratic_communism_subtype
+		}
+		set_party_name = {
+			ideology = communist
+			long_name = CSF_communist_party_long
+			name = CSF_communist_party
+		}
+		add_popularity = {
+    		ideology = communist
+ 	   		popularity = 0.05
+		}
+	}
+}

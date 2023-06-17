@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MCW = {
+				country_event = { days = 1 id = debug.3 }
+			}
+		}
+	}
+}

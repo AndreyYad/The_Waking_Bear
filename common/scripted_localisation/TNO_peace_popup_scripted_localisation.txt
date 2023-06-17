@@ -1,0 +1,867 @@
+﻿defined_text = {
+
+	name = GetWarConclusionLoc
+
+	## Moskowien's Dissolution
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = NVG
+					original_tag = TVR
+					original_tag = LUF
+					original_tag = RZH
+					original_tag = NTI
+					original_tag = OZM
+					original_tag = SNP
+					original_tag = OZL
+					original_tag = VVV
+					original_tag = PSK
+					original_tag = PFT
+					original_tag = SHI
+					original_tag = OZT
+					original_tag = NTA
+					original_tag = ORL
+					original_tag = RFS
+					original_tag = OZO
+					original_tag = POV
+					original_tag = POP
+					original_tag = OZP
+					original_tag = OZA
+					original_tag = PAU
+				}
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = NVG
+					original_tag = TVR
+					original_tag = LUF
+					original_tag = RZH
+					original_tag = NTI
+					original_tag = OZM
+					original_tag = SNP
+					original_tag = OZL
+					original_tag = VVV
+					original_tag = PSK
+					original_tag = PFT
+					original_tag = SHI
+					original_tag = OZT
+					original_tag = NTA
+					original_tag = ORL
+					original_tag = RFS
+					original_tag = OZO
+					original_tag = POV
+					original_tag = POP
+					original_tag = OZP
+					original_tag = OZA
+					original_tag = PAU
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONSLUSION_DISSOLUTION
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = OST
+					original_tag = MST
+					original_tag = DST
+					original_tag = JST
+					original_tag = UPO
+					original_tag = BLR
+				}
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = OST
+					original_tag = MST
+					original_tag = DST
+					original_tag = JST
+					original_tag = UPO
+					original_tag = BLR
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_OSTLAND
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = SAF
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = COG
+					original_tag = GRO
+					original_tag = ANG
+					original_tag = BOR
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_SAF_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = UKR
+					original_tag = FUK
+					original_tag = BOV
+					original_tag = UKS
+					original_tag = HEE
+				}
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = UKR
+					original_tag = FUK
+					original_tag = BOV
+					original_tag = UKS
+					original_tag = HEE
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_UKRAINE
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = SAF
+			}
+			event_target:winning_country = {
+				OR = {
+					original_tag = COG
+					original_tag = GRO
+					original_tag = ANG
+					original_tag = BOR
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_SAF_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = FEN
+			}
+			event_target:losing_country = {
+				original_tag = ENG
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_ECW_HMMLR_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ENG
+			}
+			event_target:losing_country = {
+				original_tag = FEN
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_ECW_COLLABS_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = FEN
+			}
+			event_target:losing_country = {
+				original_tag = CRN
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_ECW_HMMLR_WIN2
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = SCO
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = FEN
+					original_tag = ENG
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_SCOTLAND_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = FEN
+					original_tag = ENG
+				}
+			}
+			event_target:losing_country = {
+				original_tag = SCO
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_SCOTLAND_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ENG
+			}
+			event_target:losing_country = {
+				original_tag = WAL
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_ENG_WALES
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = WAL
+			}
+			event_target:losing_country = {
+				original_tag = ENG
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_ENG_WALES_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = FRS
+			}
+			event_target:winning_country = {
+				OR = {
+					original_tag = BRG
+					original_tag = BRT
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_BRG_FRA
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = BRT
+			}
+			event_target:winning_country = {
+				original_tag = FRS
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_BRITTANY
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				OR = {
+					original_tag = IBR
+					original_tag = SPR
+					original_tag = SPA
+					original_tag = SPS
+					original_tag = CTL
+					original_tag = CNT
+					original_tag = BSQ
+					original_tag = FSR
+					original_tag = GNS
+					original_tag = TBA
+					original_tag = POR
+					original_tag = PPR
+					original_tag = RPP
+					original_tag = FML
+					original_tag = GIB
+					original_tag = ALG
+					original_tag = RIF
+					original_tag = MOR
+					original_tag = GAL
+					original_tag = KBY
+				}
+			}
+			event_target:winning_country = {
+				OR = {
+					original_tag = IBR
+					original_tag = SPR
+					original_tag = SPA
+					original_tag = SPS
+					original_tag = CTL
+					original_tag = CNT
+					original_tag = BSQ
+					original_tag = FSR
+					original_tag = GNS
+					original_tag = TBA
+					original_tag = POR
+					original_tag = PPR
+					original_tag = RPP
+					original_tag = FML
+					original_tag = GIB
+					original_tag = ALG
+					original_tag = RIF
+					original_tag = MOR
+					original_tag = GAL
+					original_tag = KBY
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_IBERIAN_WARS
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				OR = {
+					original_tag = BGR
+					original_tag = GGR
+					original_tag = SGR
+					original_tag = HGR
+					original_tag = RNW
+					original_tag = GER
+				}
+			}
+			event_target:winning_country = {
+				OR = {
+					original_tag = BGR
+					original_tag = GGR
+					original_tag = SGR
+					original_tag = HGR
+					original_tag = RNW
+					original_tag = GER
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GCW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				OR = {
+					original_tag = IME
+				}
+			}
+			event_target:winning_country = {
+				original_tag = TUR
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_TURKISH_VICTORY
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				OR= {
+					original_tag = TUR
+				}
+			}
+			event_target:winning_country = {
+				original_tag = IME
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_IME_VICTORY
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = INS
+			}
+			event_target:winning_country = {
+				OR = {
+					original_tag = FRI
+					original_tag = DMP
+					original_tag = DMS
+					original_tag = PMT
+					original_tag = SLS
+					original_tag = NII
+					original_tag = ABD
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_INS_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = FRI
+			}
+			event_target:winning_country = {
+				OR = {
+					original_tag = INS
+					original_tag = SRB
+					original_tag = MKS
+					original_tag = BKB
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_FRI_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = PHI
+			}
+			event_target:winning_country = {
+				OR = {
+					original_tag = SPH
+					original_tag = UPH
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PHI_BLITZ_REBEL_WIN
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				OR = {
+					original_tag = SPH
+					original_tag = UPH
+				}
+			}
+			event_target:winning_country = {
+				original_tag = PHI
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PHI_BLITZ
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				OR = {
+					original_tag = FGB
+					original_tag = UPH
+					original_tag = SPH
+				}
+			}
+			has_global_flag = PHI_landing_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PHI_LANDING
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = SRT
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_SRT_DEAD
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = MCW
+			}
+			has_global_flag = german_civil_war_speervic
+			has_global_flag = SGR_Slave_Revolt
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_SCHORNER_DEAD
+	}
+
+	## Mano
+	# has_global_flag = WAC_over
+
+	## WAC
+	# Scenario 1
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				has_country_flag = PALF_MEMBER
+			}
+			has_global_flag = WAC_scenario_1
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_WAA_1
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				has_country_flag = WAA_MEMBER
+			}
+			has_global_flag = WAC_scenario_1
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PALF_1
+	}
+
+	# Scenario 2
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				has_country_flag = WAA_MEMBER
+			}
+			event_target:losing_country = {
+				has_country_flag = FMA_MEMBER
+			}
+			has_global_flag = WAC_scenario_2
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_WAAvsFMA_2
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				has_country_flag = WAA_MEMBER
+			}
+			event_target:losing_country = {
+				has_country_flag = PALF_MEMBER
+			}
+			has_global_flag = WAC_scenario_2
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_WAAvsPALF_2
+	}
+
+	text = {
+		trigger = {
+
+			event_target:winning_country = {
+				has_country_flag = FMA_MEMBER
+			}
+			event_target:losing_country = {
+				has_country_flag = WAA_MEMBER
+			}
+			has_global_flag = WAC_scenario_2
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_FMAvsWAA_2
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				has_country_flag = FMA_MEMBER
+			}
+			event_target:losing_country = {
+				has_country_flag = PALF_MEMBER
+			}
+			has_global_flag = WAC_scenario_2
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_FMAvsPALF_2
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				has_country_flag = PALF_MEMBER
+			}
+			event_target:losing_country = {
+				has_country_flag = WAA_MEMBER
+			}
+			has_global_flag = WAC_scenario_2
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PALFvsWAA_2
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				has_country_flag = PALF_MEMBER
+			}
+			event_target:losing_country = {
+				has_country_flag = FMA_MEMBER
+			}
+			has_global_flag = WAC_scenario_2
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PALFvsFMA_2
+	}
+
+	# Scenario 3
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				has_country_flag = PALF_MEMBER
+			}
+			has_global_flag = WAC_scenario_3
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_FMA_3
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				has_country_flag = FMA_MEMBER
+			}
+			has_global_flag = WAC_scenario_3
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PALF_3
+	}
+
+	## Russia
+	# Omolon April Fools 2022
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = BRY
+				has_cosmetic_tag = BRY_IRK_Harmonious
+			}
+			event_target:winning_country = {
+				original_tag = OMO
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_BRY_IRK_AF_2022
+	}
+	# Finland
+	text = { # Has winter war flavor
+		trigger = {
+			event_target:losing_country = {
+				original_tag = FIN
+			}
+			event_target:winning_country = {
+				is_russian_nation = yes
+				OR = {
+					has_government = socialist
+					has_government = communist
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_FIN_red
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = FIN
+			}
+			event_target:winning_country = {
+				is_russian_nation = yes
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_FIN
+	}
+	# Urals
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				OR = {
+					original_tag = MGN
+					original_tag = DRL
+					original_tag = ORE
+					original_tag = URL
+				}
+			}
+			event_target:winning_country = {
+				OR = {
+					tag = WSR
+					tag = WSB
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_URL4
+	}
+	# Actual Russia
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				tag = SIB
+			}
+			event_target:winning_country = {
+				original_tag = KOM
+				has_government = esoteric_nazism
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_RUS_tabby
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				is_russian_nation = yes
+			}
+			event_target:winning_country = {
+				is_russian_nation = yes
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_RUS
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = MEN
+			}
+			event_target:winning_country = {
+				original_tag = PRC
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PRC_MEN
+	}
+
+	#Western Insurrection
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = YUN
+			}
+			event_target:losing_country = {
+				original_tag = CHI
+			}
+			NOT = { has_global_flag = JAP_Western_Insurrection_Intervention }
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONSLUSION_WI_GAW
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = CHI
+			}
+			event_target:losing_country = {
+				original_tag = YUN
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONSLUSION_WI_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = JAP
+			}
+			event_target:losing_country = {
+				is_in_faction_with = YUN
+			}
+			OR = {
+				has_global_flag = JAP_Western_Insurrection_Intervention
+				has_global_flag = YUN_NPA_GAW_Crisis
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONSLUSION_GAW_LOSE
+	}
+
+	# Colombian Civil War
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				or = {
+					tag = COL
+					tag = CLL
+					tag = CLC
+				}
+			}
+			event_target:losing_country = {
+				or = {
+					tag = COL
+					tag = CLL
+					tag = CLC
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_COL_CW
+	}
+
+	# Puerto Plata Invasion
+	text = {
+		trigger = {
+			has_global_flag = PPI_ceasefire_collapsed
+			event_target:winning_country = {
+				tag = CAL
+			}
+			event_target:losing_country = {
+				tag = DOM
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_CAL_DOM_ceasefire
+	}
+	text = {
+		trigger = {
+			has_global_flag = PPI_ceasefire_collapsed
+			event_target:winning_country = {
+				tag = DOM
+			}
+			event_target:losing_country = {
+				tag = CAL
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_DOM_CAL_ceasefire
+	}
+
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = CAL
+			}
+			event_target:losing_country = {
+				tag = DOM
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_CAL_DOM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = DOM
+			}
+			event_target:losing_country = {
+				tag = CAL
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_DOM_CAL
+	}
+
+	# Reclamation of France
+	text = {
+		trigger = {
+			OR = {
+				has_global_flag = FFR_reclamation_happening
+				has_global_flag = FFR_reclamation_civil_war_happening
+				has_global_flag = FFR_reclamation_victory
+			}
+			event_target:winning_country = {
+				or = {
+					tag = FRD
+					tag = FFR
+				}
+			}
+			event_target:losing_country = {
+				or = {
+					tag = FRS
+					tag = FRM
+					tag = FRV
+					tag = FMM
+					tag = FGR
+					tag = FIT
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_FFR_CW_win
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_global_flag = FFR_reclamation_happening
+				has_global_flag = FFR_reclamation_civil_war_happening
+				has_global_flag = FFR_reclamation_defeat
+			}
+			event_target:winning_country = {
+				or = {
+					tag = FRS
+					tag = FRM
+					tag = FRV
+					tag = FMM
+					tag = FGR
+					tag = FIT
+				}
+			}
+			event_target:losing_country = {
+				or = {
+					tag = FRD
+					tag = FFR
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_FFR_CW_lose
+	}
+
+	# French Civil War
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				or = {
+					tag = FRS
+					tag = FRM
+					tag = FRV
+					tag = FMM
+					tag = FGR
+					tag = FIT
+					tag = FRD
+				}
+			}
+			event_target:losing_country = {
+				or = {
+					tag = FRS
+					tag = FRM
+					tag = FRV
+					tag = FMM
+					tag = FGR
+					tag = FIT
+					tag = FRD
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_FRA_CW
+	}
+	##
+	text = {
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_DEFAULT
+	}
+}
+
+}
