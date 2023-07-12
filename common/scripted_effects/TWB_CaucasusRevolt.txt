@@ -1,5 +1,5 @@
 CaucasusRevolt_Start = {
-	NVG = { NVG_volunteers_to_csf = 0 }
+	NVG = { set_variable = { NVG_volunteers_to_csf = 0 } }
 	CAU = { country_event = caucasus_revolt.5 }
 	CSF = { set_variable = { CSF_CaucasusRevolt_progress = 7 } }
 	set_global_flag = CAUCASIAN_PARTISANS

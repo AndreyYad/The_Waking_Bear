@@ -170,11 +170,6 @@ BEL_SGR = {
 	color_ui = rgb { 88 94 101 }
 }
 
-BEL_GOR = {
-	color = rgb { 145 106 81 }
-	color_ui = rgb { 145 106 81 }
-}
-
 BEL_HGR = {
 	color = rgb { 80 45 90 }
 	color_ui = rgb { 80 45 90 }
@@ -255,16 +250,6 @@ DEN_GER = {
 	color_ui = rgb { 112 97 89 }
 }
 
-CZE_ONLY_GER = {
-	color = rgb { 63 92 107 }
-	color_ui = rgb { 63 92 107 }
-}
-
-CZE_warlord = {
-	color = rgb { 63 72 77 }
-	color_ui = rgb { 63 72 77 }
-}
-
 SLO_GER = {
 	color = rgb { 214 208 196 }
 	color_ui = rgb { 214 208 196 }
@@ -290,15 +275,11 @@ SGR_CAU_provisional_government = {
 	color_ui = rgb { 107 92 87 }
 }
 
-SLO_GER_RK = {
-	color = rgb { 76 62 70 }
-	color_ui = rgb { 76 62 70 }
-}
-
 SER_GER = {
 	color = rgb { 60 90 138 }
 	color_ui = rgb { 60 90 138 }
 }
+
 GMS_SER = {
 	color = rgb { 100 80 110 }
 	color_ui = rgb { 100 80 110 }
@@ -312,16 +293,6 @@ HUN_GER = {
 ROM_GER = {
 	color = rgb { 100 80 95 }
 	color_ui = rgb { 100 80 95 }
-}
-
-RKB = {
-	color = { 18 18 18 }
-	color_ui = rgb { 18 18 18 }
-}
-
-RK_UK = {
-	color = { 23 21 21 }
-	color_ui = rgb { 23 21 21 }
 }
 
 CRO_GER = {
@@ -1161,41 +1132,6 @@ MAG_WA_SIB = {
 MAG_WA_RUS = {
 	color = rgb { 65 125 168 }
 	color_ui = rgb { 65 125 168 }
-}
-
-SPA_RK = {
-	color = rgb { 86 86 86 }
-	color_ui = rgb { 86 86 86 }
-}
-
-SPS_RK = {
-	color = rgb { 112 112 112 }
-	color_ui = rgb { 112 112 112 }
-}
-
-GAL_RK = {
-	color = rgb { 63 63 63 }
-	color_ui = rgb { 63 63 63 }
-}
-
-BSQ_RK = {
-	color = rgb { 188 188 188 }
-	color_ui = rgb { 188 188 188 }
-}
-
-CTL_RK = {
-	color = rgb { 142 142 142 }
-	color_ui = rgb { 142 142 142 }
-}
-
-POR_RK = {
-	color = rgb { 130 130 130 }
-	color_ui = rgb { 130 130 130 }
-}
-
-MOR_RK = {
-	color = rgb { 81 69 62 }
-	color_ui = rgb { 81 69 62 }
 }
 
 SAM_Zykov = {
@@ -2096,6 +2032,12 @@ SNS_ITWD = {
 	color = rgb { 102 117 71 }
 	color_ui = rgb { 102 117 71 }
 }
+
+SNS_ITA = {
+	color = rgb { 124 154 112 }
+	color_ui = rgb { 124 154 112 }
+}
+
 MLY_UMAJF = {
 	color = rgb { 190 28 46 }
 	color_ui = rgb { 190 28 46 }
@@ -2127,10 +2069,6 @@ SPH_PRP = {
 SPH_Marcos = {
 	color = rgb { 225 198 153 }
 	color_ui = rgb { 225 198 153 }
-}
-UPH_OFN_Mandate = {
-	color = rgb { 100 138 190 }
-	color_ui = rgb { 100 138 190 }
 }
 
 PHI_JAP_Administration = {

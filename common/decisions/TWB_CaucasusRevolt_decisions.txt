@@ -8,6 +8,13 @@ CaucasusRevolt_category = {
 		}
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = CaucasusRevolt_cooldown_tt
+				not = { 
+					has_country_flag = CaucasusRevolt_cooldown 
+					has_country_flag = CaucasusRevolt_border_war 
+				}
+			}
 		}
 
 		visible = {
@@ -30,6 +37,7 @@ CaucasusRevolt_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NVG_CaucasusRevolt_send_weapons"
+			set_country_flag = CaucasusRevolt_cooldown
 			hidden_effect = {
 				#add_equipment_to_stockpile = {
  				#	type = infantry_equipment
@@ -40,6 +48,8 @@ CaucasusRevolt_category = {
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove NVG_CaucasusRevolt_send_weapons"
+
+			clr_country_flag = CaucasusRevolt_cooldown
 
 			send_equipment = {
 				equipment = infantry_equipment
@@ -65,6 +75,13 @@ CaucasusRevolt_category = {
 		}
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = CaucasusRevolt_cooldown_tt
+				not = { 
+					has_country_flag = CaucasusRevolt_cooldown 
+					has_country_flag = CaucasusRevolt_border_war 
+				}
+			}
 		}
 
 		visible = {
@@ -85,6 +102,7 @@ CaucasusRevolt_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NVG_CaucasusRevolt_send_weapons"
+			set_country_flag = CaucasusRevolt_cooldown
 			hidden_effect = {
 				add_manpower = -500
 			}
@@ -92,6 +110,7 @@ CaucasusRevolt_category = {
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove NVG_CaucasusRevolt_send_weapons"
+			clr_country_flag = CaucasusRevolt_cooldown
 			add_to_variable = { NVG_volunteers_to_csf = 1 }
 			CSF = {
 				add_manpower = 500
@@ -110,6 +129,13 @@ CaucasusRevolt_category = {
 		}
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = CaucasusRevolt_cooldown_tt
+				not = { 
+					has_country_flag = CaucasusRevolt_cooldown 
+					has_country_flag = CaucasusRevolt_border_war 
+				}
+			}
 		}
 
 		visible = {
@@ -125,8 +151,16 @@ CaucasusRevolt_category = {
 
 		days_re_enable = 90
 
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NVG_CaucasusRevolt_arrange_border_conflict"
+			set_country_flag = CaucasusRevolt_cooldown
+		}
+
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove NVG_CaucasusRevolt_send_weapons"
+			clr_country_flag = CaucasusRevolt_cooldown
+			set_country_flag = CaucasusRevolt_border_war
+			CAU = { set_country_flag = CaucasusRevolt_border_war }
 			start_border_war = {
 				change_state_after_war = no
 				attacker = {
@@ -162,6 +196,13 @@ CaucasusRevolt_category = {
 		}
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = CaucasusRevolt_cooldown_tt
+				not = { 
+					has_country_flag = CaucasusRevolt_cooldown 
+					has_country_flag = CaucasusRevolt_border_war 
+				}
+			}
 		}
 
 		visible = {
@@ -175,10 +216,11 @@ CaucasusRevolt_category = {
 
 		days_remove = 10
 
-		days_re_enable = 30
+		days_re_enable = 20
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NVG_CaucasusRevolt_send_weapons"
+			set_country_flag = CaucasusRevolt_cooldown
 			hidden_effect = {
 				#add_equipment_to_stockpile = {
  				#	type = infantry_equipment
@@ -189,7 +231,7 @@ CaucasusRevolt_category = {
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove NVG_CaucasusRevolt_send_weapons"
-
+			clr_country_flag = CaucasusRevolt_cooldown
 			CSF = {
 				custom_effect_tooltip = CaucasusRevolt_lower_strength_tt
 				set_temp_variable = { random_min = -2 }

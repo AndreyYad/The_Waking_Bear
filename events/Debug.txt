@@ -139,4 +139,15 @@ country_event = {
 		VarRandom = yes
 		log = "[?var_random]"
 	}	
+	option = {
+		name = "Кавказ не марионетка"	
+		CAU = { 
+			end_puppet = GER 
+			leave_faction = yes
+		}
+	}
+	option = {
+		name = ""
+		CSF = { white_peace = GER }
+	}
 }

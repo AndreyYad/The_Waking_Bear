@@ -9,6 +9,7 @@ country_event = {
 
 	option = {
 		name = caucasus_revolt.1.a
+		clr_country_flag = CaucasusRevolt_border_war
 		army_experience = 10
 		add_war_support = 0.05
 		CSF = {
@@ -27,6 +28,7 @@ country_event = {
 
 	option = {
 		name = caucasus_revolt.2.a
+		clr_country_flag = CaucasusRevolt_border_war
 		army_experience = 10
 		add_war_support = 0.1
 	}
@@ -41,6 +43,7 @@ country_event = {
 
 	option = {
 		name = caucasus_revolt.3.a
+		clr_country_flag = CaucasusRevolt_border_war
 		army_experience = 5
 		add_stability = -0.1
 		add_war_support = -0.1
@@ -56,6 +59,7 @@ country_event = {
 
 	option = {
 		name = caucasus_revolt.4.a
+		clr_country_flag = CaucasusRevolt_border_war
 		army_experience = 5
 		add_stability = -0.1
 		add_war_support = -0.1
@@ -88,6 +92,46 @@ country_event = {
 		add_popularity = {
     		ideology = communist
  	   		popularity = 0.05
+		}
+	}
+}
+
+# Красное восстание (Кавказия)
+country_event = {
+	id = caucasus_revolt.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event caucasus_revolt.1" }
+
+	title = caucasus_revolt.6.t
+	desc = caucasus_revolt.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = caucasus_revolt.6.a
+		remove_ideas = CAU_partisan_activity
+		set_political_party = {
+			ideology = communist
+			popularity = 0
+		}
+		hidden_effect = {
+			CAU = { 
+				end_puppet = GER 
+				leave_faction = yes
+			}
+		}
+		CSF = {
+			transfer_state = 1564
+			add_state_core = 1564
+			declare_war_on = {
+				target = CAU
+				type = independence_wargoal
+			}
+		}
+		hidden_effect = {
+			CSF = {
+				add_civil_war_target = CAU
+				load_oob = CaucasusRevolt_obb
+			}
 		}
 	}
 }

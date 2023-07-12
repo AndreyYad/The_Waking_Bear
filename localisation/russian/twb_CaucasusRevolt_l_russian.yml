@@ -1,9 +1,14 @@
 ﻿l_russian:
 
+ ### Name of Wars ###
+ WAR_NAME_CAU_CSF: "Кавказское восстание"
+ WAR_NAME_CSF_CAU: "Кавказское восстание"
+
  ### Tooltip ###
  CaucasusRevolt_increase_strength_tt: "Повышение готовности к §Rвосстанию§!"
  CaucasusRevolt_lower_strength_tt: "Понижение готовности к §Rвосстанию§!"
- CaucasusRevolt_return_manpower_tt: "§GПосле выполнения своих задач выжившие добровольцы вернуться§!"
+ CaucasusRevolt_return_manpower_tt: "§GПосле выполнения своих задач выжившие добровольцы вернуться домой§!"
+ CaucasusRevolt_cooldown_tt: "Не выполняется другое действия и не идёт рейд"
 
  ### Ideas ###
  CAU_partisan_activity: "Партизанская активность"
@@ -12,6 +17,10 @@
  caucasus_revolt.5.t: "Будёновцы подняли головы"
  caucasus_revolt.5.d: ""
  caucasus_revolt.5.a: "Кошмар!"
+
+ caucasus_revolt.6.t: "Дагестанское восстание"
+ caucasus_revolt.6.d: ""
+ caucasus_revolt.6.a: "Кошмар!"
 
  ### Decisions ###
  CaucasusRevolt_category: "Кавказские партизаны"
